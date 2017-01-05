@@ -1,0 +1,360 @@
+html{
+	height: 100%;
+	min-width: 900px;
+}
+body{
+	background-color: green;
+	height: 100%;
+}
+div.instructions{
+	margin-top: 3%;
+	float: left;
+	height: 90%;
+	width: 30%;
+	background-color: black;
+	color: white;
+}
+h1.instructions_font{
+	font-size: 25px;
+	text-align: center;	
+}
+div.restart{
+	border: 5px blue groove;
+	position: relative;
+	background-color: white;
+	height: 60px;
+	width: 140px;
+	top: 25%;
+	margin: auto;
+}
+h1.restart{
+	color: black;
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	top: -20px;
+}
+div.game_board{
+	position: relative;
+	margin-top: 3%;
+	margin-left: 10%;
+	float: left;
+	width: 500px;
+}
+img.gameboard{
+	width: 100%;
+	margin: auto;
+}
+img.players{
+	opacity: 0;
+	position: absolute;
+	height: 50%;
+	width: 50%;
+}
+img.green{
+	top: 0;
+	left: 0;
+}
+img.blue{
+	top: 0;
+	left: 50%;
+}
+img.red{
+	top: 50%;
+	left: 0;
+}
+img.yellow{
+	top: 50%;
+	left: 50%;
+}
+div.boxes{
+	opacity: 100;
+}
+div.box1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box2{
+	position: absolute;
+	top: 0;
+	left: 71.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box3{
+	position: absolute;
+	top: 0;
+	left: 143px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box4{
+	position: absolute;
+	top: 0;
+	left: 214.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box5{
+	position: absolute;
+	top: 0;
+	left: 286px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box6{
+	position: absolute;
+	top: 0;
+	left: 357.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box7{
+	position: absolute;
+	top: 0;
+	left: 429px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box8{
+	position: absolute;
+	top: 71.5px;
+	left: 429px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box9{
+	position: absolute;
+	top: 143px;
+	left: 429px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box10{
+	position: absolute;
+	top: 214.5px;
+	left: 429px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box11{
+	position: absolute;
+	top: 286px;
+	left: 429px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box12{
+	position: absolute;
+	top: 286px;
+	left: 357.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box13{
+	position: absolute;
+	top: 286px;
+	left: 286px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box14{
+	position: absolute;
+	top: 286px;
+	left: 214.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box15{
+	position: absolute;
+	top: 286px;
+	left: 143px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box16{
+	position: absolute;
+	top: 286px;
+	left: 71.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box17{
+	position: absolute;
+	top: 286px;
+	left: 0;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box18{
+	position: absolute;
+	top: 214.5px;
+	left: 0;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box19{
+	position: absolute;
+	top: 143px;
+	left: 0;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box20{
+	position: absolute;
+	top: 71.5px;
+	left: 0;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box21{
+	position: absolute;
+	top: 71.5px;
+	left: 71.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box22{
+	position: absolute;
+	top: 71.5px;
+	left: 143px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box23{
+	position: absolute;
+	top: 71.5px;
+	left: 214.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box24{
+	position: absolute;
+	top: 71.5px;
+	left: 286px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box25{
+	position: absolute;
+	top: 71.5px;
+	left: 357.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box26{
+	position: absolute;
+	top: 143px;
+	left: 357.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box27{
+	position: absolute;
+	top: 214.5px;
+	left: 357.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box28{
+	position: absolute;
+	top: 214.5px;
+	left: 286px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box29{
+	position: absolute;
+	top: 214.5px;
+	left: 214.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box30{
+	position: absolute;
+	top: 214.5px;
+	left: 143px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box31{
+	position: absolute;
+	top: 214.5px;
+	left: 71.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box32{
+	position: absolute;
+	top: 143px;
+	left: 71.5px;
+	width: 71.5px;
+	height: 71.5px;
+}
+div.box33{
+	position: absolute;
+	top: 143px;
+	left: 143px;
+	width: 214px;
+	height: 71.5px;
+}
+div.dice_box{
+	margin-left: 10%;
+	position: relative;
+	margin-top: 5%;
+	float: left;
+	height: 25%;
+	width: 60%;
+	background-color: orange;
+	max-width: 500px;
+}
+#dice1_box{
+	top: 25%;
+	left: 15px;
+	position: absolute;
+	float: left;
+	height: 70px;
+	width: 70px;
+}
+#dice1{
+	top: 5px;
+	left: 15px;
+	position: absolute;
+	float: left;
+	height: 70px;
+	width: 70px;
+}
+#dice2_box{
+	top: 25%;
+	right: 15px;
+	position: absolute;
+	float: left;
+	height: 70px;
+	width: 70px;
+}
+#dice2{
+	top: 5px;
+	right: 15px;
+	position: absolute;
+	float: left;
+	height: 70px;
+	width: 70px;
+}
+div.roll{
+	border: 5px blue groove;
+	position: relative;
+	background-color: white;
+	height: 60px;
+	width: 140px;
+	top: 25%;
+	margin: auto;
+}
+h1.roll{
+	position: relative;
+	text-align: center;
+	font-size: 60px;
+	top: -43px;
+}

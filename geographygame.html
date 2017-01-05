@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geography Game</title>
+	<link rel="stylesheet" type="text/css" href="geographygame.css">
+</head>
+<body id="background" onload="computer()">
+	<div class="instructions">
+		<h1 class="instructions_font">Instructions</h1>
+		<ol class="instructions">
+			<li>
+				Roll Dice
+			</li>
+			<li>
+				The bckground will be the color of the players whos turn it is
+			</li>
+			<li>
+				If you answer the question corectly you will be moved forward
+			</li>
+			<li>
+				If you anser incrorectly you will be moved back to your previous location
+			</li>
+			<li>
+				If you land on a blue square you will get an extra turn
+			</li>
+			<li>
+				Try to get to the end
+			</li>			
+		</ol>
+		<div class="restart" onclick="location.reload()">
+			<h1 class="restart">Restart</h1>
+		</div>
+	</div>
+	<div class="game_board">
+		<img class="gameboard" src="img/game_board.png">
+		<div class="box1 boxes">
+			<img id="player1box1" class="player1box1 players green" src="img/player1.png">
+			<img id="player2box1" class="player2box1 players blue" src="img/player2.png">
+			<img id="player3box1" class="player3box1 players red" src="img/player3.png">
+			<img id="player4box1" class="player4box1 players yellow" src="img/player4.png">
+		</div>
+		<div class="box2 boxes">
+			<img id="player1box2" class="player1box2 players green" src="img/player1.png">
+			<img id="player2box2" class="player2box2 players blue" src="img/player2.png">
+			<img id="player3box2" class="player3box2 players red" src="img/player3.png">
+			<img id="player4box2" class="player4box2 players yellow" src="img/player4.png">
+		</div>
+		<div class="box3 boxes">
+			<img id="player1box3" class="player1box3 players green" src="img/player1.png">
+			<img id="player2box3" class="player2box3 players blue" src="img/player2.png">
+			<img id="player3box3" class="player3box3 players red" src="img/player3.png">
+			<img id="player4box3" class="player4box3 players yellow" src="img/player4.png">
+		</div>
+		<div class="box4 boxes">
+			<img id="player1box4" class="player1box4 players green" src="img/player1.png">
+			<img id="player2box4" class="player2box4 players blue" src="img/player2.png">
+			<img id="player3box4" class="player3box4 players red" src="img/player3.png">
+			<img id="player4box4" class="player4box4 players yellow" src="img/player4.png">
+		</div>
+		<div class="box5 boxes">
+			<img id="player1box5" class="player1box5 players green" src="img/player1.png">
+			<img id="player2box5" class="player2box5 players blue" src="img/player2.png">
+			<img id="player3box5" class="player3box5 players red" src="img/player3.png">
+			<img id="player4box5" class="player4box5 players yellow" src="img/player4.png">
+		</div>
+		<div class="box6 boxes">
+			<img id="player1box6" class="player1box6 players green" src="img/player1.png">
+			<img id="player2box6" class="player2box6 players blue" src="img/player2.png">
+			<img id="player3box6" class="player3box6 players red" src="img/player3.png">
+			<img id="player4box6" class="player4box6 players yellow" src="img/player4.png">
+		</div>
+		<div class="box7 boxes">
+			<img id="player1box7" class="player1box7 players green" src="img/player1.png">
+			<img id="player2box7" class="player2box7 players blue" src="img/player2.png">
+			<img id="player3box7" class="player3box7 players red" src="img/player3.png">
+			<img id="player4box7" class="player4box7 players yellow" src="img/player4.png">
+		</div>
+		<div class="box8 boxes">
+			<img id="player1box8" class="player1box8 players green" src="img/player1.png">
+			<img id="player2box8" class="player2box8 players blue" src="img/player2.png">
+			<img id="player3box8" class="player3box8 players red" src="img/player3.png">
+			<img id="player4box8" class="player4box8 players yellow" src="img/player4.png">
+		</div>
+		<div class="box9 boxes">
+			<img id="player1box9" class="player1box9 players green" src="img/player1.png">
+			<img id="player2box9" class="player2box9 players blue" src="img/player2.png">
+			<img id="player3box9" class="player3box9 players red" src="img/player3.png">
+			<img id="player4box9" class="player4box9 players yellow" src="img/player4.png">
+		</div>
+		<div class="box10 boxes">
+			<img id="player1box10" class="player1box10 players green" src="img/player1.png">
+			<img id="player2box10" class="player2box10 players blue" src="img/player2.png">
+			<img id="player3box10" class="player3box10 players red" src="img/player3.png">
+			<img id="player4box10" class="player4box10 players yellow" src="img/player4.png">
+		</div>
+		<div class="box11 boxes">
+			<img id="player1box11" class="player1box11 players green" src="img/player1.png">
+			<img id="player2box11" class="player2box11 players blue" src="img/player2.png">
+			<img id="player3box11" class="player3box11 players red" src="img/player3.png">
+			<img id="player4box11" class="player4box11 players yellow" src="img/player4.png">
+		</div>
+		<div class="box12 boxes">
+			<img id="player1box12" class="player1box12 players green" src="img/player1.png">
+			<img id="player2box12" class="player2box12 players blue" src="img/player2.png">
+			<img id="player3box12" class="player3box12 players red" src="img/player3.png">
+			<img id="player4box12" class="player4box12 players yellow" src="img/player4.png">
+		</div>
+		<div class="box13 boxes">
+			<img id="player1box13" class="player1box13 players green" src="img/player1.png">
+			<img id="player2box13" class="player2box13 players blue" src="img/player2.png">
+			<img id="player3box13" class="player3box13 players red" src="img/player3.png">
+			<img id="player4box13" class="player4box13 players yellow" src="img/player4.png">
+		</div>
+		<div class="box14 boxes">
+			<img id="player1box14" class="player1box14 players green" src="img/player1.png">
+			<img id="player2box14" class="player2box14 players blue" src="img/player2.png">
+			<img id="player3box14" class="player3box14 players red" src="img/player3.png">
+			<img id="player4box14" class="player4box14 players yellow" src="img/player4.png">
+		</div>
+		<div class="box15 boxes">
+			<img id="player1box15" class="player1box15 players green" src="img/player1.png">
+			<img id="player2box15" class="player2box15 players blue" src="img/player2.png">
+			<img id="player3box15" class="player3box15 players red" src="img/player3.png">
+			<img id="player4box15" class="player4box15 players yellow" src="img/player4.png">
+		</div>
+		<div class="box16 boxes">
+			<img id="player1box16" class="player1box16 players green" src="img/player1.png">
+			<img id="player2box16" class="player2box16 players blue" src="img/player2.png">
+			<img id="player3box16" class="player3box16 players red" src="img/player3.png">
+			<img id="player4box16" class="player4box16 players yellow" src="img/player4.png">
+		</div>
+		<div class="box17 boxes">
+			<img id="player1box17" class="player1box17 players green" src="img/player1.png">
+			<img id="player2box17" class="player2box17 players blue" src="img/player2.png">
+			<img id="player3box17" class="player3box17 players red" src="img/player3.png">
+			<img id="player4box17" class="player4box17 players yellow" src="img/player4.png">
+		</div>
+		<div class="box18 boxes">
+			<img id="player1box18" class="player1box18 players green" src="img/player1.png">
+			<img id="player2box18" class="player2box18 players blue" src="img/player2.png">
+			<img id="player3box18" class="player3box18 players red" src="img/player3.png">
+			<img id="player4box18" class="player4box18 players yellow" src="img/player4.png">
+		</div>
+		<div class="box19 boxes">
+			<img id="player1box19" class="player1box19 players green" src="img/player1.png">
+			<img id="player2box19" class="player2box19 players blue" src="img/player2.png">
+			<img id="player3box19" class="player3box19 players red" src="img/player3.png">
+			<img id="player4box19" class="player4box19 players yellow" src="img/player4.png">
+		</div>
+		<div class="box20 boxes">
+			<img id="player1box20" class="player1box20 players green" src="img/player1.png">
+			<img id="player2box20" class="player2box20 players blue" src="img/player2.png">
+			<img id="player3box20" class="player3box20 players red" src="img/player3.png">
+			<img id="player4box20" class="player4box20 players yellow" src="img/player4.png">
+		</div>
+		<div class="box21 boxes">
+			<img id="player1box21" class="player1box21 players green" src="img/player1.png">
+			<img id="player2box21" class="player2box21 players blue" src="img/player2.png">
+			<img id="player3box21" class="player3box21 players red" src="img/player3.png">
+			<img id="player4box21" class="player4box21 players yellow" src="img/player4.png">
+		</div>
+		<div class="box22 boxes">
+			<img id="player1box22" class="player1box22 players green" src="img/player1.png">
+			<img id="player2box22" class="player2box22 players blue" src="img/player2.png">
+			<img id="player3box22" class="player3box22 players red" src="img/player3.png">
+			<img id="player4box22" class="player4box22 players yellow" src="img/player4.png">
+		</div>
+		<div class="box23 boxes">
+			<img id="player1box23" class="player1box23 players green" src="img/player1.png">
+			<img id="player2box23" class="player2box23 players blue" src="img/player2.png">
+			<img id="player3box23" class="player3box23 players red" src="img/player3.png">
+			<img id="player4box23" class="player4box23 players yellow" src="img/player4.png">
+		</div>
+		<div class="box24 boxes">
+			<img id="player1box24" class="player1box24 players green" src="img/player1.png">
+			<img id="player2box24" class="player2box24 players blue" src="img/player2.png">
+			<img id="player3box24" class="player3box24 players red" src="img/player3.png">
+			<img id="player4box24" class="player4box24 players yellow" src="img/player4.png">
+		</div>
+		<div class="box25 boxes" onclick="p25=p25+1">
+			<img id="player1box25" class="player1box25 players green" src="img/player1.png">
+			<img id="player2box25" class="player2box25 players blue" src="img/player2.png">
+			<img id="player3box25" class="player3box25 players red" src="img/player3.png">
+			<img id="player4box25" class="player4box25 players yellow" src="img/player4.png">
+		</div>
+		<div class="box26 boxes">
+			<img id="player1box26" class="player1box26 players green" src="img/player1.png">
+			<img id="player2box26" class="player2box26 players blue" src="img/player2.png">
+			<img id="player3box26" class="player3box26 players red" src="img/player3.png">
+			<img id="player4box26" class="player4box26 players yellow" src="img/player4.png">
+		</div>
+		<div class="box27 boxes">
+			<img id="player1box27" class="player1box27 players green" src="img/player1.png">
+			<img id="player2box27" class="player2box27 players blue" src="img/player2.png">
+			<img id="player3box27" class="player3box27 players red" src="img/player3.png">
+			<img id="player4box27" class="player4box27 players yellow" src="img/player4.png">
+		</div>
+		<div class="box28 boxes">
+			<img id="player1box28" class="player1box28 players green" src="img/player1.png">
+			<img id="player2box28" class="player2box28 players blue" src="img/player2.png">
+			<img id="player3box28" class="player3box28 players red" src="img/player3.png">
+			<img id="player4box28" class="player4box28 players yellow" src="img/player4.png">
+		</div>
+		<div class="box29 boxes">
+			<img id="player1box29" class="player1box29 players green" src="img/player1.png">
+			<img id="player2box29" class="player2box29 players blue" src="img/player2.png">
+			<img id="player3box29" class="player3box29 players red" src="img/player3.png">
+			<img id="player4box29" class="player4box29 players yellow" src="img/player4.png">
+		</div>
+		<div class="box30 boxes">
+			<img id="player1box30" class="player1box30 players green" src="img/player1.png">
+			<img id="player2box30" class="player2box30 players blue" src="img/player2.png">
+			<img id="player3box30" class="player3box30 players red" src="img/player3.png">
+			<img id="player4box30" class="player4box30 players yellow" src="img/player4.png">
+		</div>
+		<div class="box31 boxes">
+			<img id="player1box31" class="player1box31 players green" src="img/player1.png">
+			<img id="player2box31" class="player2box31 players blue" src="img/player2.png">
+			<img id="player3box31" class="player3box31 players red" src="img/player3.png">
+			<img id="player4box31" class="player4box31 players yellow" src="img/player4.png">
+		</div>
+		<div class="box32 boxes">
+			<img id="player1box32" class="player1box32 players green" src="img/player1.png">
+			<img id="player2box32" class="player2box32 players blue" src="img/player2.png">
+			<img id="player3box32" class="player3box32 players red" src="img/player3.png">
+			<img id="player4box32" class="player4box32 players yellow" src="img/player4.png">
+		</div>
+		<div class="box33 boxes">
+			<img id="player1box33" class="player1box33 players green" src="img/player1.png">
+			<img id="player2box33" class="player2box33 players blue" src="img/player2.png">
+			<img id="player3box33" class="player3box33 players red" src="img/player3.png">
+			<img id="player4box33" class="player4box33 players yellow" src="img/player4.png">
+		</div>
+	</div>	
+	<div class="dice_box">
+		<div id="dice1_box">
+			<img id="dice1" src="img/dice1.png">
+		</div>
+		<div id="dice2_box">
+			<img id="dice2" src="img/dice1.png">
+		</div>
+		<div class="roll" onclick="roll()">
+			<h1 class="roll">Roll</h1>
+		</div>
+	</div>
+	<script type="text/javascript" src="geographygame.js"></script>
+</body>
+</html>
