@@ -89,7 +89,7 @@ function roll () {
 				return;
 			};
 			if (p25==25) {
-				document.getElementById("background").style.background-image="img/25.png";
+				document.getElementById("background").style.backgroundImage="img/25.png";
 			};
 			if (p25!=25) {
 				document.getElementById("background").style.background="blue";
